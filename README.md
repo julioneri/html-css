@@ -1,11 +1,15 @@
 # html-css
 
-Exercicios de HTML5 e CSS3
+<h1>Exercicios de HTML5 e CSS3</h1>
 
-Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
+<p>Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!</p>
 
-<a href="https://julioneri.github.io/html-css/exercicios/ex004/index.html">Executar o exercício 004</a>
-<a href="https://julioneri.github.io/html-css/exercicios/ex011/index.html">Executar o exercício 011</a>
-<a href="https://julioneri.github.io/html-css/exercicios/ex013/index.html">Executar o exercício 013</a>
-<a href="https://julioneri.github.io/html-css/exercicios/ex015/index.html">Executar o exercício 015</a>
-<a href="https://julioneri.github.io/html-css/exercicios/ex016/index.html">Executar o exercício 016</a>
+<h2>Veja alguns dos meus exercícios!</h2>
+
+<ul>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex004/index.html">Executar o exercício 004</a></li>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex011/index.html">Executar o exercício 011</a></li>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex013/index.html">Executar o exercício 013</a></li>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex015/index.html">Executar o exercício 015</a></li>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex016/index.html">Executar o exercício 016</a></li>
+</ul>
