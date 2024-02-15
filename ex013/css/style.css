@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Sans-serif, Arial;
+}
+
+body{
+    background: url(/images/background.avif);
+    background-position: center;
+    background-repeat: none;
+    /* backdrop-filter: blur(1px); */
+    background-size: cover;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-area{
+    background: linear-gradient(#ffffff00, #12142090);
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+}
+
+.left-content p{
+    color: #fff;
+}
+
+.left-content p{
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.left-content button{
+    position: relative;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    /* border: 1px solid #fff; */
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-content button:hover{
+    /* transform: scale(1.05); */
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 30px #fff;
+}
+
+.left-content h1{
+    font-size: 2.3em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.left-content{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: start;
+    animation: moverTexto 1s ease-in-out;
+}
+
+.left-content p{
+    text-align: justify;
+}
+
+.right-area{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#header{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    animation: moverBarra 1.5s ease-in-out;;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    gap: 30px;
+}
+
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    bottom: -7px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.3s;
+    transform-origin: left;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1); 
+}
+
+#header button{
+    width: 140px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#header button:hover{
+    background-color: #fff;
+    color: #000;
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 10px #fff;
+}
+
+@keyframes moverTexto {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes moverBarra {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}

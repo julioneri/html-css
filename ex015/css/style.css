@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Sans-serif, Arial;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #c759e0 0, #d84fd1 6.25%, #e644c1 12.5%, #f13ab0 18.75%, #f9319e 25%, #fe2c8c 31.25%, #ff2c7b 37.5%, #ff3069 43.75%, #ff3858 50%, #fb4247 56.25%, #f54c36 62.5%, #ed5624 68.75%, #e4600c 75%, #d96900 81.25%, #cd7100 87.5%, #c07900 93.75%, #b28000 100%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo{
+    position: relative;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #fff;
+    cursor: pointer;
+    animation: animation-top 0.5s ease-in-out;
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    animation: animation-top 1s ease-in-out;
+}
+
+.nav-ul a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #fff;
+    
+}
+
+.nav-ul a::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.nav-ul a:hover::after{
+    transform: scaleX(1);
+}
+
+.btn-login{
+    width: 140px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: 0.3s;
+    cursor: pointer;
+    animation: animation-top 1.5s ease-in-out;
+}
+
+.btn-login:hover{
+    background: #fff;
+    color: #d96900;
+    box-shadow: 0 0 15px #fff;
+}
+
+@keyframes animation-top {
+    from{
+        transform: translateY(15px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}

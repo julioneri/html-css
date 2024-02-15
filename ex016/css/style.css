@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Sans-serif, Arial;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    background: url(/images/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    width: 350px;
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #ffffff5c;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000000c5;
+    animation: up-element 1s ease-in-out;
+}
+
+.wrapper h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffffff5c;
+    border-radius: 50px;
+    padding: 10px 25px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box input:focus{
+    border: 1px solid #fff;
+}
+
+.wrapper b:hover{
+    text-decoration: underline;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box i{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper-form button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    border: none;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 15px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.wrapper-form button:hover{
+    box-shadow: 0 0 15px #fff;
+    animation: pulse 0.5s ease-in-out;
+}
+
+.reemember-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes rainbow{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes up-element{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
