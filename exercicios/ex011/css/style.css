@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url(/images/background.avif);
+    background: url(../images/background.avif);
     background-repeat: none;
     background-position: center;
 }

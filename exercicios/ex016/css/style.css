@@ -8,7 +8,8 @@
 }
 
 body{
-    background: url(/images/fundo.jpg);
+    background-image: url(../images/background.jpg);
+    background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +18,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    /* background-image: linear-gradient(150deg, #000000 0, #6b1ca0 25%, #42abd4 50%, #6b1ca0 75%, #000000 100%);
+    opacity: 79%; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .wrapper{
@@ -97,11 +111,13 @@ body{
     justify-content: space-between;
 }
 
+/*
 @keyframes rainbow{
     100%{
         filter: hue-rotate(360deg);
     }
 }
+*/
 
 @keyframes up-element{
     from{
