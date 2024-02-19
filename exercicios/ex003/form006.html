@@ -6,8 +6,25 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php">
-        
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#ffffff">
+        </p>
+        <p>
+            <label for="inivel">Nível: </label>
+            <input type="range" name="nivel" id="inivel" value="3" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
