@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: Sans-serif, Arial, Helvetica;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" placeholder="(XX)XXXX-XXXX" required autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx -->
+        <!-- HTML5 telefone pattern (Não é suficiente) -->
         <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome">
-        </p>
-        <p>
-            <label for="iemail">E-mail: </label>
-            <input type="email" name="email" id="iemail">
-        </p>
-        <p>
-            <label for="itel">Telefone: </label>
-            <input type="tel" name="tel" id="itel">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
