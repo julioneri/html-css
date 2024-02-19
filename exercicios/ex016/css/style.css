@@ -21,7 +21,7 @@ body{
     position: relative;
 }
 
-body::after{
+html, body::after{
     content: "";
     position: absolute;
     /* background-image: linear-gradient(150deg, #000000 0, #6b1ca0 25%, #42abd4 50%, #6b1ca0 75%, #000000 100%);
@@ -37,6 +37,7 @@ body::after{
     background: transparent;
     backdrop-filter: blur(5px);
     width: 350px;
+    /* min-width: 250px; */
     text-align: center;
     padding: 35px;
     border: 1px solid #ffffff5c;
@@ -109,6 +110,7 @@ body::after{
 .reemember-forgot{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*
@@ -118,6 +120,7 @@ body::after{
     }
 }
 */
+
 
 @keyframes up-element{
     from{
