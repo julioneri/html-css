@@ -39,6 +39,10 @@ Grandes Telas: acima de 1200px
     #menu-icon {
         display: none;
     }
+
+    main {
+        width: 70vw;
+    }
 }
 
 @media screen and (max-width: 767px) { /* MOBILE */
