@@ -25,6 +25,7 @@ span#burger {
     color: white;
     text-align: center;
     padding: 10px;
+    transition: 0.2s;
 }
 
 span#burger:hover {
@@ -47,6 +48,7 @@ ul > li > a {
     background-color: rgb(83, 83, 83);
     color: white;
     border-top: 1px solid gray;
+    transition: 0.2s;
 }
 
 ul > li > a:hover {
