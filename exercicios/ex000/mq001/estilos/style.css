@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: Nunito, sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(180deg, #ffe5bc 0, #f9e7bc 6.25%, #f3e9bc 12.5%, #edebbd 18.75%, #e7ecbf 25%, #e0eec1 31.25%, #daefc5 37.5%, #d3f1c9 43.75%, #cdf2cd 50%, #c7f3d2 56.25%, #c1f4d7 62.5%, #bcf5dd 68.75%, #b7f5e2 75%, #b3f5e8 81.25%, #aff5ee 87.5%, #adf5f4 93.75%, #acf5f9 100%);
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    box-shadow: 0px 5px 15px #01071a1c;
+}
+
+header > h1 {
+    font-size: 2em;
+    color: black;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-icon {
+    font-size: 2em;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+ul > li > a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: black;
+}

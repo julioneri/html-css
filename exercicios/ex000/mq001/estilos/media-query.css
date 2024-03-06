@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Typical Device Breackpoints
+------------------------------
+Pequenas Telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) { /* DESKTOP */
+    ul {
+        display: flex;
+    }
+
+    ul > li > a {
+        position: relative;
+        margin-left: 25px;
+        padding: 10px;
+    }
+
+    ul > li> a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transition: 0.3s;
+    }
+
+    ul > li > a:hover::after {
+        transform: scaleX(1);
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) { /* MOBILE */
+    ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+        transform: translate(0, 100%);
+        width: 155px;
+        padding: 10px 0;
+        box-shadow: inset 0px 5px 5px #01071a1c;
+    }
+    
+    ul > li > a {
+        display: block;
+        text-align: center;
+        /* text-indent: 19px; */
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+
+    ul > li > a:hover {
+        background-color: #01071a1c;
+    }
+}
