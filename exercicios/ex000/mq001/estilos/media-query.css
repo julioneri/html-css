@@ -42,6 +42,8 @@ Grandes Telas: acima de 1200px
 
     main {
         width: 70vw;
+        min-width: 700px;
+        padding: 35px;
     }
 }
 
