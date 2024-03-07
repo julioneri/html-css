@@ -62,15 +62,17 @@ Grandes Telas: acima de 1200px
     }
 
     header > nav > ul > li > a {
+        padding: 15px;
         background-color: transparent;
         transition: 0.3s;
     }
 
     header > nav > ul > li > a:hover {
-        background-image:#34a0a4cb;
+        background-image: #34a0a4cb;
     }
 
     main {
+        margin-top: 100px;
         max-width: 700px;
     }
 }

@@ -17,6 +17,7 @@ body {
 }
 
 header {
+    position: relative;
     background: transparent;
 }
 
@@ -41,27 +42,30 @@ header > h1 {
 }
 
 header > nav > ul {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
     display: none;
     text-align: center;
     box-shadow: 1px 10px 5px #00000059;
 }
 
 header > nav > ul > li {
-    border-bottom: 1px solid #073b4c90;
+    border-bottom: 1px solid #033647;
 }
 
 header > nav > ul > li > a {
     display: block;
     color: white;
     font-size: 1.1em;
-    background: #073b4c90;
+    background: #073b4c;
     text-decoration: none;
     padding: 10px;
     transition: 0.2s;
 }
 
 header > nav > ul > li > a:hover {
-    background: #34a0a4cb;
+    background: #34a0a4;
 }
 
 main {
