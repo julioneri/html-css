@@ -54,12 +54,10 @@ Grandes Telas: acima de 1200px
         align-items: center;
         justify-content: space-evenly;
         background: #073b4c90;
-        border: 1px solid #073b4c90;
     }
 
     header > nav > ul > li {
         border: none;
-        box-shadow: inset 0 0 5px rgba(2, 39, 51, 0.565);
         width: 100%;
     }
 
@@ -69,8 +67,7 @@ Grandes Telas: acima de 1200px
     }
 
     header > nav > ul > li > a:hover {
-        background-image: linear-gradient(190deg, #34a0a4cb 0%, #073b4c90 100%);
-        border-radius: 15px 0;
+        background-image: #34a0a4cb;
     }
 
     main {
