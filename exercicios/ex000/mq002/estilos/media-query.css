@@ -8,3 +8,35 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
+
+@media screen and (min-width: 768px) {
+    #menuicon {
+        display: none;
+    }
+    
+    header > nav > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #073b4c90;
+    }
+
+    header > nav > ul > li {
+        border: none;
+        width: 100%;
+    }
+
+    header > nav > ul > li > a {
+        background-color: transparent;
+        transition: 0.3s;
+    }
+
+    header > nav > ul > li > a:hover {
+        background-image: linear-gradient(190deg, #34a0a4cb 0%, #073b4c90 100%);
+        border-radius: 15px 0;
+    }
+
+    main {
+        max-width: 700px;
+    }
+}

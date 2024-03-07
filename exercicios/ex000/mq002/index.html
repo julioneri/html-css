@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <nav>
@@ -40,13 +40,21 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'none') {
                 itens.style.display = 'block'
-                menuicon.style.background = '#118ab290'
+                menuicon.style.background = '#34a0a4cb'
             } else {
                 itens.style.display = 'none'
-                menuicon.style.background = '#118ab2'
+                menuicon.style.background = '#073b4ccc'
             }
         }
     </script>

@@ -25,24 +25,25 @@ header > h1 {
     padding: 15px;
     font-size: 2em;
     color: white;
+    text-shadow: 1px 5px 5px #000000;
 }
 
 #menuicon {
     display: block;
-    background: #118ab2;
+    background: #073b4ccc;
     text-align: center;
     color: white;
     font-size: 2em;
     cursor: pointer;
     padding: 10px;
     transition: 0.2s;
-    box-shadow: 1px 5px 5px #00000059;
+    box-shadow: 1px 10px 5px #00000059;
 }
 
 header > nav > ul {
     display: none;
     text-align: center;
-    box-shadow: 1px 5px 5px #00000059;
+    box-shadow: 1px 10px 5px #00000059;
 }
 
 header > nav > ul > li {
@@ -60,17 +61,17 @@ header > nav > ul > li > a {
 }
 
 header > nav > ul > li > a:hover {
-    background: #118ab290;
+    background: #34a0a4cb;
 }
 
 main {
-    background-image: linear-gradient(190deg, #118ab2 0%, #073b4c90 100%);
+    background-image: linear-gradient(190deg, #34a0a4cb 0%, #073b4c90 100%);
     backdrop-filter: blur(15px);
     padding: 25px;
     width: 90vw;
     margin: 50px auto;
     border-radius: 15px 0;
-    box-shadow: 1px 5px 5px #00000059;
+    box-shadow: 1px 10px 5px #00000059;
 }
 
 main > article > h2 {
@@ -100,9 +101,9 @@ footer > p {
 
 footer p, footer a {
     color: white;
-    text-shadow: 1px 1px 1px #524a4549;
+    text-shadow: 1px 5px 5px #000000;
 }
 
 footer > p > a:hover {
-    color: #524a4549;
+    color: #00ffb7;
 }
