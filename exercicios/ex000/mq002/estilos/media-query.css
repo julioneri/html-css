@@ -9,6 +9,41 @@ Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    header > h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    main {
+        box-shadow: none;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    main > article h2, main > article p{
+        color: black;
+    }
+
+    footer {
+        border-top: 1px solid black;
+    }
+
+    footer > p, footer > p > a {
+        color: black;
+        text-decoration: none;
+        text-shadow: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #menuicon {
         display: none;
