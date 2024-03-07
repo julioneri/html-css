@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <span id="menuicon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <ul id="itens">
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Título do Artigo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur ipsa consequuntur aliquid praesentium magnam? Maxime necessitatibus quis mollitia soluta illo eveniet perspiciatis fugit asperiores, ducimus commodi placeat odit ipsam.</p>
+            <p>Omnis eius quidem distinctio. Ad repudiandae optio molestias nesciunt voluptatibus cupiditate voluptatem beatae, impedit, doloribus ut officiis dolore praesentium deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus obcaecati facere in perspiciatis, neque, distinctio fugit quod non facilis iusto quasi quaerat maiores quia porro! Sapiente perferendis saepe mollitia?hic quis voluptates. Ipsa deleniti iusto recusandae? Nesciunt, ad quas.</p>
+            <p>Soluta numquam, facere vel neque deleniti nesciunt aliquam eveniet doloremque sint praesentium Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus officiis, assumenda porro voluptates cum? Aliquam assumenda accusamus blanditiis? Aliquid temporibus eaque a, fuga officia maxime blanditiis! Numquam, non recusandae? possimus beatae recusandae doloribus, modi iusto error quam enim, velit a animi tenetur! Minus ut nesciunt consectetur deserunt!</p>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="#">Júlio César</a></p>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+                menuicon.style.background = '#b3a394'
+            } else {
+                itens.style.display = 'none'
+                menuicon.style.background = '#d5c7bc'
+            }
+        }
+    </script>
+</body>
+</html>
