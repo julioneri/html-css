@@ -8,6 +8,7 @@
 
 <ul>
     <li><a href="https://julioneri.github.io/html-css/exercicios/ex000/mq001/index.html" target="_blank">Executar o exercício 001</a></li>
+    <li><a href="https://julioneri.github.io/html-css/exercicios/ex000/mq002/index.html" target="_blank">Executar o exercício 002</a></li>
     <li><a href="https://julioneri.github.io/html-css/exercicios/ex004/index.html" target="_blank">Executar o exercício 004</a></li>
     <li><a href="https://julioneri.github.io/html-css/exercicios/ex013/index.html" target="_blank">Executar o exercício 013</a></li>
     <li><a href="https://julioneri.github.io/html-css/exercicios/ex015/index.html" target="_blank">Executar o exercício 015</a></li>

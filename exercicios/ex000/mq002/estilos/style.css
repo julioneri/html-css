@@ -86,7 +86,7 @@ main > article > p {
     text-align: justify;
     text-indent: 25px;
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
 }
 
@@ -98,13 +98,22 @@ footer {
 footer > p {
     padding: 25px;
     font-size: 1.1em;
+    font-weight: 400;
 }
 
 footer p, footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    margin: 0 5px;
     text-shadow: 1px 5px 5px #000000;
 }
 
 footer > p > a:hover {
     color: #00ffb7;
+}
+
+#link-icon {
+    font-size: 1.1em;
 }
