@@ -5,45 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/media-query.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <div id="image">
-                <!-- Aqui vai a imagem na CSS -->
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai a imagem nas CSS -->
             </div>
-            <div id="login">
-                <div class="text-area">
-                    <h1>Login</h1>
-                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                </div>
-                <form id="main-form" action="login.php">
-                    
-                    <div class="input-area">
-                        <label for="idemail">
-                            <span class="material-symbols-outlined">alternate_email<span>
-                        </label>
-                        <input id="idemail" name="email" type="email" placeholder="Seu e-mail" required>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
                     </div>
-    
-                    <div class="input-area">
-                        <label for="idpassword">
-                            <span class="material-symbols-outlined">lock</span>
-                        </label>
-                        <input id="idpassword" name="pass" type="password" placeholder="Sua senha" minlength="7" maxlength="20" required>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="7" maxlength="20 ">
+                        <label for="isenha">Senha</label>
                     </div>
-                    
-                    <div id="btn-area">
-                        <input class="btn-t1" type="submit">
-                        <a class="btn-t2" href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
-                    </div>
+                    <input type="submit">
+                    <a class="botao" href="esqueci.html">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
     </main>
+    
 </body>
 </html>

@@ -1,16 +1,20 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/*
+    PALETA DE CORES
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
 
 * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Nunito, Helvetica, sans-serif;
 }
 
-body {
-    background-image: linear-gradient(120deg, #0fa3b1 0%, #4361ee 50%, #7209b7 100%);
+body, html {
+    background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
 }
@@ -19,144 +23,118 @@ main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    animation: intro 1s ease-in-out;
 }
 
-#formulario {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 15px;
     overflow: hidden;
 
-    width: 85vw;
-    min-width: 315px;
-    max-width: 370px;
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
-    height: 550px;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
-#image {
-    background: url(../images/welcome-image.jpg);
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/fundo.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 30%;
+    background-position: left center;
+    height: 200px;
 }
 
-#login {
+section#login > div#formulario {
+    display: block;
     padding: 10px;
 }
 
-#login h1 {
-    color: #4361ee;
-    font-size: 2em;
+div#formulario > h1 {
     text-align: center;
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-#login p {
-    color: rgb(95, 95, 95);
-    text-align: justify;
-    font-size: 1em;
-    font-weight: 400;
-    margin: 10px 0;
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
     padding: 5px;
 }
 
-.input-area {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-image: linear-gradient(120deg, #0fa3b1 0%, #4361ee 50%, #7209b7 100%);
-    padding: 5px 7px;
-    margin: 10px 0;
-    border-radius: 5px;
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 47px);
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-11px);
 }
 
-.input-area input {
-    width: 100%;
-    height: 30px;
-    border: none;
+div.campo > input:focus-within {
     background-color: white;
-    padding: 5px 10px;
-    margin-left: 5px;
-    border-radius: 5px;
-    color: rgb(95, 95, 95);
-    font-size: 1em;
-    font-weight: 500;
     outline: none;
 }
 
-.input-area input::placeholder {
-    color: gray;
-}
-
-.input-area .material-symbols-outlined {
-    color: white;
-    margin-top: 7px;
-}
-
-#btn-area button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#btn-area .material-symbols-outlined{
-    margin-left: 5px;
-}
-
-#btn-area input, a {
+form > input[type=submit] {
     display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
     font-size: 1em;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#btn-area .btn-t1{
-    background-color: #4361ee;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
     border: none;
-    color: white;
+    border-radius: 5px;
 }
 
-#btn-area .btn-t1:hover {
-    background-color: #7209b7;
+form > input[type=submit]:hover {
+    background-color: #307471;
+    cursor: pointer;
 }
 
-#btn-area .btn-t2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 5px;
+    background-color: white;
+    color: #307471;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: 600;
-    background-color: transparent;
-    border: 2px solid #4361ee;
-    color: #4361ee;
 }
 
-#btn-area .btn-t2:hover {
-    background-color: #7209b7;
-    border-color: #7209b7;
-    color: white;
+form > a.botao:hover {
+    background-color: #70d8d5;
 }
 
-@keyframes intro {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    to {
-        opacity: 100%;
-        transform: translateY(0);
-    }
+form > a.botao > span {
+    font-size: 0.5em;
 }

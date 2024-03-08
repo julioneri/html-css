@@ -9,64 +9,55 @@ Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) {
-    #formulario {
-        display: flex;
-        
-        width: 90vw;
-        min-width: 270px;
-        max-width: 800px;
-
-        height: 70vh;
-        min-height: 400px;
-        max-height: 500px;
+@media screen and (min-width: 768px) and (max-width: 992px) { /* CONFIGURAÇÃO PARA TABLET*/
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
-    #image {
-        position: relative;
-        width: 45%;
+    section#login {
+        width: 80vw;
+        height: 280px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
         height: 100%;
     }
-    
-    #login {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 55%;
-        padding: 0 35px;
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
     }
 }
 
-@media screen and (min-width: 1200px){
-    #formulario {
-        flex-direction: row-reverse;
+@media screen and (min-width: 992px) { /* CONFIGURAÇÃO PARA DESKTOP */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
-    #image::after {
-        content: '';
-        position: absolute;
-        background-image: url(../images/person.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 50%;
         height: 100%;
-        top: 0;
-        left: 0;
-        animation: flutue 5s infinite ease-in-out;
-    }
-}
-
-@keyframes flutue {
-    0% {
-        transform: translateY(0px);
     }
 
-    50% {
-        transform: translateY(15px);
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
     }
 
-    100% {
-        transform: translateY(0);
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 10px 0;
     }
 }
