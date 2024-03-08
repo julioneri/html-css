@@ -10,8 +10,8 @@ Grandes Telas: acima de 1200px
 */
 
 @media screen and (min-width: 768px) {
-    main {
-        flex-direction: row;
+    #formulario {
+        display: flex;
         width: 90vw;
         height: 70vh;
         min-width: 270px;
@@ -35,7 +35,7 @@ Grandes Telas: acima de 1200px
 }
 
 @media screen and (min-width: 1200px){
-    main {
+    #formulario {
         flex-direction: row-reverse;
     }
 
