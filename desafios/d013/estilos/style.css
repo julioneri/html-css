@@ -73,7 +73,7 @@ main {
     height: 30px;
     border: none;
     background-color: white;
-    padding: 5px;
+    padding: 5px 10px;
     margin-left: 5px;
     border-radius: 5px;
     color: rgb(95, 95, 95);

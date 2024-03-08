@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Typical Device Breackpoints
+------------------------------
+Pequenas Telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        width: 90vw;
+        height: 70vh;
+        min-width: 270px;
+        max-width: 800px;
+    }
+
+    #image {
+        position: relative;
+        border-radius: 15px 0 0 15px;
+        width: 45%;
+        height: 100%;
+    }
+    
+    #login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 55%;
+        padding: 0 35px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main {
+        flex-direction: row-reverse;
+    }
+
+    #image {
+        border-radius: 0 15px 15px 0;
+    }
+
+    #image::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/person.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        animation: flutue 5s infinite ease-in-out;
+    }
+}
+
+@keyframes flutue {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
