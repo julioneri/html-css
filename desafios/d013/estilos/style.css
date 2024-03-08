@@ -28,9 +28,9 @@ main {
     background-color: white;
     border-radius: 15px;
     width: 95vw;
-    height: 500px;
+    height: 90vh;
     min-width: 270px;
-    max-width: 70vh;
+    max-width: 350px;
 }
 
 #image {
