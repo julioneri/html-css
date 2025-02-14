@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="taskModal.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <h1>The best today</h1>
+
+    <!-- Container principal -->
+    <main id="container" class="containerStyle">
+        <div id="window-bar"><span class="material-symbols-outlined">check_box</span>To do List</div>
+
+        <section id="windowContainer">
+            <header id="dayArea">
+                <h2>New Day</h2>
+                <div><p id="dia">Dia</p><p id="mes">Mês</p><p id="ano">Ano</p></div>
+            </header>
+            <div id="listContent">
+                <p onclick="openModal()"><span class="material-symbols-outlined">add</span>Add a Task</p>
+
+                <ul id="toDoList">
+                    <!-- Aqui haverá tarefas -->
+                </ul>
+
+            </div>
+            <div id="noTaskinList">
+                <p>Você ainda não possui tarefas. <span onclick="openModal()">Crie uma Tarefa</span> para começar a visualizar!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal (New Task) -->
+    <section id="modalArea">
+        <div id="setArea" class="containerStyle">
+            <h2>New Task</h2>
+            <div>
+                <p>Write a task<span class="material-symbols-outlined">expand_more</span></p>
+                <div class="promptArea">
+                    <input type="text" name="taskHere" id="itaskHere" autocomplete="off">
+                    <input type="button" value="Ok" onclick="newTask()">
+                </div>
+                <button class="btnClose" onclick="closeModal()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por <a target="_blank" href="https://github.com/julioneri">Júlio César</a> <span id="link-icon" class="material-symbols-outlined">
+            prompt_suggestion
+            </span></p>
+    </footer>
+    <script src="datamethod.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

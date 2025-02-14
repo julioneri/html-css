@@ -1,0 +1,129 @@
+section#modalArea {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 10px;
+    z-index: 111;
+    animation: topMove 0.3s ease-in-out;
+}
+
+div#setArea {
+    position: relative;
+    min-width: 300px;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#setArea h2 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #59595930;
+    color: #AAA;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+div#setArea p {
+    display: flex;
+    font-size: 1.1em;
+    color: #AAA;
+    font-weight: 600;
+    margin: 10px 15px 0 15px;
+}
+
+div#setArea div.promptArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+div#setArea input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #0066ff;
+    outline: none;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0066ff;
+    
+}
+
+div#setArea input[type="button"] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    background-color: #0066ff;
+    cursor: pointer;
+}
+
+div#setArea input[type="button"]:hover {
+    background-color: #2a7fff;
+}
+
+button.btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    color: #AAA;
+    background-color: transparent;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+button.btnClose:hover {
+    color: #595959;
+    background-color: #59595955;
+    border-radius: 50%;
+    height: 35px;
+}
+
+@keyframes topMove {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+div#noTaskinList {
+    border-top: 1px solid #59595930;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+}
+
+div#noTaskinList > p {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+div#noTaskinList > p > span {
+    color: #0066ff;
+    cursor: pointer;
+}
+
+div#noTaskinList > p > span:hover {
+    text-decoration: underline;
+}
